@@ -80,7 +80,6 @@
     <div class="w3-container w3-padding-32" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
     
-  
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
       <div class="w3-col m3">
@@ -88,9 +87,13 @@
       </div>
   
       <div class="w3-col m3">
-        <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+        <a href="/projects/hospital-incidents-project.html"><img src="/images/HospitalIncidentsProject.jpg" style="width:100%" class="w3-hover-opacity" alt="Holby"></a>
       </div>
+ 
+
   
+
+
       <div class="w3-col m3">
         <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
       </div>
@@ -158,7 +161,7 @@
     // Change style of navbar on scroll
     window.onscroll = function() {myFunction()};
     function myFunction() {
-        var navbar = document.getElementById("myNavbar");
+        var navbar = document.getElementById("navigation");
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
         } else {
