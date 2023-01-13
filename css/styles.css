@@ -5,7 +5,7 @@ body, html {
   line-height: 1.8;
 }
 
-/* Create a Parallax Effect */
+/* Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
@@ -15,7 +15,7 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
+  background-image: url('/images/CrimesProject.jpg');
   min-height: 100%;
 }
 
