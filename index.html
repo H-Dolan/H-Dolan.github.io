@@ -53,28 +53,30 @@
     <div class="w3-container w3-padding-32" id="about">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h3>
 
-        <p>I am an aspiring Data Analyst, eager to get started in my data career. I have a Bachelor's degree in Computer Science and a certificate in Data Analytics. 
+        <p>My name is Hannah and I am an aspiring Data Analyst, eager to get started in my data career. I have a Bachelor's degree in Computer Science and a certificate in Data Analytics. 
 
         </p>
         <p>My Technical Skills include:   
-          <br>&emsp; Systems: Mac OS, Windows, Linux 
-          <br>&emsp; Software: Tableau, Microsoft Excel, Word, and PowerPoint, Adobe Photoshop
-          <br>&emsp; Cloud: Amazon AWS (Storage Services)
-          <br>&emsp; Libraries: D3.js, Pandas, NumPy
-          <br>&emsp; Frameworks: Express, Node.js
-          <br>&emsp; Languages and Skills: Java, Python, SQL, MySQL Workbench, R, HTML, CSS, JSON, JavaScript, Experience working in Oracle VM VirtualBox environments
+          <br>&emsp; <b>Systems: </b>Mac OS, Windows, Linux 
+          <br>&emsp; <b>Software: </b>Tableau, Microsoft Excel, Word, and PowerPoint, Adobe Photoshop
+          <br>&emsp; <b>Cloud: </b>Amazon AWS (Storage Services)
+          <br>&emsp; <b>Libraries: </b>D3.js, Pandas, NumPy
+          <br>&emsp; <b>Frameworks: </b>Express, Node.js
+          <br>&emsp; <b>Languages and Skills: </b>Java, Python, SQL, MySQL Workbench, R, HTML, CSS, JSON, JavaScript, Experience working in Oracle VM VirtualBox environments
         </p>
+
+        <p>The purpose of this page is to showcase some of my projects and programming skills.</p>
 
         <!-- 
           <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-large">
-              <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-              <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+              <p><b><i class="fa fa-user w3-margin-right"></i>Hannah Dolan</b></p><br>
+              <img src="/images/" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
             </div>
           
-             //Hide this text on small devices 
+            //Hide text on small devices 
             <div class="w3-col m6 w3-hide-small w3-padding-large">
-              <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              <p>I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
@@ -164,51 +166,33 @@
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <!--
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    -->
     <a href="https://github.com/H-Dolan"><i class="fa fa-github w3-hover-opacity"></i></a>
     <a href="https://www.linkedin.com/in/h-dolan080/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   </div>
 </footer>
 
 <script>
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+    var navbar = document.getElementById("navigation");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } 
+      else { navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+  }
     
-    // Change style of navbar on scroll
-    window.onscroll = function() {myFunction()};
-    function myFunction() {
-        var navbar = document.getElementById("navigation");
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-        } else {
-            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-        }
-    }
-    
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function toggleFunction() {
-        var x = document.getElementById("navSmall");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
-    }
-    </script>
-    
-
-
-    
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+    var x = document.getElementById("navSmall");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } 
+      else { x.className = x.className.replace(" w3-show", "");
+      }
+  }
+</script>
+        
 </body>
 </html>
