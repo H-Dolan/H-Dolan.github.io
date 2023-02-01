@@ -16,10 +16,23 @@
     <script src="http://d3js.org/topojson.v1.min.js"></script>
         
     <title>Dolan Data Analyst</title>
+
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 85%;
+        }
+
+        .sP {
+            display: block;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    
     <!-- Navigation -->
     <div class="w3-top">
       <div class="w3-bar w3-white w3-wide w3-padding w3-card" id="navigation">
@@ -42,25 +55,38 @@
         </div>
     </div>
 
-    <div class="w3-container w3-padding-32" id="ems">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">EMS Incident Dispatch Visualization</h3>
-        <p>I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    <div class="w3-container w3-padding-32" id="proj">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Preschool Management Software</h3>
+        <p>
+          Our client was a nature based preschool that relied on pen and paper to keep reports. The reports were then typed for individual emails to be sent to each guardian. Our proposed 
+          solutions was to automate the process with a web based application. Mock student data was used initially to test functionality. 
         </p>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hI8nGm7H9q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <p>I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      </p>
+        
+        <p>
+          <b>Methodology: </b> The analytics portion was designed to view actvity trends, track friends between students, and student absences. Data was pulled from the database using SQL. 
+          The dynamic charts were created with JavaScript. 
+          <br><br>A chart was created based on whether a pie chart or line chart was selected from the dropdown. 
+          <br><br>The pie chart explored student activities and student friends. The default view showed how many times all students participated in an activity over a certain period of time.
+          Activities with a total less than 5% were not given a label but hovering over each would give all details on that activity. 
+          Individual students could be selected to see their activities they participated in or friends. 
+
+        <div class="sP">
+            <img src="/images/sP-2.jpg" alt="pie"> 
+        </div>
+
+        <p>
+          The line chart tracked activity trends and absences over a period of time in order to identify seasonal trends. 
+        </p>
+
+        <div class="sP">
+            <img src="/images/sP-3.jpg" alt="line"> 
+        </div>
     </div>
 
     <div class="w3-container w3-padding-32" id="colab">
-      <p>
-        Project created by: Hannah Dolan, Nathan Raymond, Emily Smith
-      </p>
+        <p>
+            Project created by: Hannah Dolan, Joseph Nehl, Nathan Raymond, Arthur Kharit, Shannon Kiloh, Matthew Kint
+        </p>
     </div>
     
 </body>
