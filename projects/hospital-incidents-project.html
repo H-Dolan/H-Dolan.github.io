@@ -39,9 +39,10 @@ var viz;
 
 function initViz() {
     var containerDiv = document.getElementById("vizContainer"),
-        url = "https://public.tableau.com/views/HolbyCityIncidents/Dashboard2",
+        // url = "https://public.tableau.com/views/HolbyCityIncidents/Dashboard2",
+        url = "https://public.tableau.com/views/HolbyCityIncidents/Overview?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link",
         options = {
-            hideTabs: true
+            hideTabs: false
         };
 
     viz = new tableau.Viz(containerDiv, url, options);
@@ -90,7 +91,7 @@ function vizResize() {
             and define terms. Once finished, the files were exported as a CSV and imported into a database. I queried the data required and used Tableau to 
             visualize the results. 
         </p>
-        <p>Drag the corner to adjust to the size of your browser or see the project in Tableau <a href="https://public.tableau.com/views/HolbyCityIncidents/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link" class="w3-hover-text-blue">here</a>.</p>
+        <p>Drag the corner to adjust to the size of your browser or see the project in Tableau <a href="https://public.tableau.com/app/profile/hannah4527/viz/HolbyCityIncidents/Overview" class="w3-hover-text-blue">here</a>.</p>
     </div>
     
     <!-- Resize -->
